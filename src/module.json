@@ -2,7 +2,6 @@
   "id": "asc-newspaper-style-journal",
   "title": "Newspaper Styled Journal",
   "description": "A olde timey newspaper sheet theme",
-  "version": "0.1.0",
   "compatibility": {
     "minimum": "11",
     "verified": "12"
@@ -21,5 +20,6 @@
     "requires": [
   ]},
   "manifest":"https://gitea.ascorrea.com/asc/asc-newspaper-style-journal/releases/download/latest/module.json",
-  "download":"https://gitea.ascorrea.com/asc/asc-newspaper-style-journal/releases/download/0.1.3/module.zip"
+  "download":"https://gitea.ascorrea.com/asc/asc-newspaper-style-journal/releases/download/0.1.4/module.zip",
+  "version": "0.1.4"
 }
