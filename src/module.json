@@ -1,0 +1,21 @@
+{
+  "id": "asc-newspaper-style-journal",
+  "title": "Newspaper Styled Journal",
+  "description": "A olde timey newspaper sheet theme",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "authors": ["lmxsdl"],
+  "scripts": [],
+  "esmodules": [
+    "scripts/newspaper.js"
+  ],
+  "styles": [
+    "styles/newspaper.css"
+  ],
+  "relationships": {
+    "requires": [
+  ]}
+}

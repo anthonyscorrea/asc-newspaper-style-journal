@@ -1,0 +1,169 @@
+/*
+    Thanks, attributions & links
+    *************************************
+    Parchment, by FilterForge : https://www.flickr.com/photos/filterforge/9340122531
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+body {
+    --newspaper-background-texture-image: url(../textures/parchment.jpg);
+    --newspaper-headline-font: 'Noticia Text';
+    --newspaper-base-font: 'EB Garamond';
+    --newspaper-name-font: 'UnifrakturCook';
+}
+
+/************************************************
+	Headers and text
+************************************************/
+
+.newspaper h1, 
+.newspaper h2 {
+    border-bottom: 0px;
+    font-family: var(--newspaper-headline-font);
+    line-height: 85%;
+}
+
+.newspaper .journal-entry-page {
+    font-family: var(--newspaper-base-font) !important;
+}
+
+.newspaper div.newspaper-content {
+    column-count: 2;
+    text-align: justify;
+}
+
+.newspaper div.newspaper-content p:first-child{
+    margin-top: 0;
+}
+
+.newspaper h1.newspaper-date {
+    display: none;
+}
+
+.newspaper p.newspaper-date {
+    column-count: 1;
+    text-align: end;
+    font-size: xx-small;
+}
+
+.newspaper p.newspaper-name {
+    column-count: 1;
+    font-family: var(--newspaper-name-font);
+    font-size: 5em;
+    margin: 8px;
+    text-align: center;
+}
+
+.newspaper .scrollable {
+    padding: 0.5rem;
+}
+
+.newspaper .newspaper-name:before, .newspaper .newspaper-name:after {
+    display: none;
+    content: '';
+    background-image: url(../artwork/newspaper-title-flourish.svg);
+    background-size: 1em 1em;
+    height: 1em;
+    width: 1em;
+}
+
+.newspaper .newspaper-name:before {
+    margin-right: 0.2ch;
+}
+
+.newspaper .newspaper-name:after {
+    margin-left: 0.2ch;
+}
+
+.newspaper p.newspaper-tagline {
+    column-count: 1;
+    /* font-size: 2.8em; */
+    font-style: italic;
+    text-align: center;
+    border: black solid;
+    font-size: x-small;
+}
+
+.newspaper h2 {
+    font-size: xxx-large;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.newspaper img {
+    height: 300px;
+}
+
+.newspaper .journal-entry-content div:has(img){
+    text-align: center;
+}
+
+.newspaper blockquote p{
+    column-count: 1;
+    text-align: center;
+}
+
+.newspaper blockquote {
+    margin: 0;
+    padding: inherit;
+    border: none;
+    font-style: italic;
+    column-count: 1-count
+}
+
+.newspaper .editor-content>h3 {
+    font-size: 2.4em;
+}
+
+.newspaper .editor-content>p, .newspaper .editor-content>ul {
+    font-size: 2.2em;
+}
+
+/* MEME minimal compatibility */
+
+.newspaper .CodeMirror p, 
+.newspaper .CodeMirror ul {
+    font-family: var(--newspaper-base-font);
+    font-size: 2.2em;
+}
+
+/************************************************
+    Special text and highlights
+************************************************/
+
+/* Modifies Polyglot CSS */
+
+.newspaper .polyglot-journal {
+    background-color: #b38e4c60;
+}
+
+/************************************************
+    Background and various window elements
+************************************************/
+
+/* Background */
+
+.newspaper .window-content .journal-entry-content .single-page  {
+    background: var(--newspaper-background-texture-image);
+    background-size: cover;
+}
+
+/*
+    One Journal compatibility
+*/
+
+/* Background with OneJournal */
+
+#OneJournalShell .newspaper.one-journal-attached .window-content .single-page {
+    background: var(--newspaper-background-texture-image);
+}
+
+/* Entry title underline with OneJournal */
+
+/* .newspaper.one-journal-attached form input[name="name"] {
+  border-width: 0;
+} */
